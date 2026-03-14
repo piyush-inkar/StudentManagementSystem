@@ -16,6 +16,8 @@ This application is based on Object-Oriented Programming (OOP) Concepts, Project
 
 - Delete student record
 
+- File handling to store student data
+
 - Menu-driven console interface
 
 - Organized project structure using packages
@@ -34,8 +36,6 @@ This application is based on Object-Oriented Programming (OOP) Concepts, Project
 - Update student information
 
 - Prevent duplicate student IDs
-
-- File handling to store student data
 
 - Exception handling for better input validation
 
