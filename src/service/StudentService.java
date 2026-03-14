@@ -1,6 +1,7 @@
 package service;
 
 import model.Student;
+import storage.FileStorage;
 
 import java.util.ArrayList;
 
@@ -9,6 +10,7 @@ public class StudentService {
 
     public void addStudent(Student student) {
         STUDENTS.add(student);
+        FileStorage.saveStudents(STUDENTS);
         System.out.println("\nStudent added successfully");
     }
 
@@ -41,11 +43,16 @@ public class StudentService {
         for (Student s : STUDENTS) {
             if (s.getId() == id) {
                 STUDENTS.remove(s);
+                FileStorage.saveStudents(STUDENTS);
                 System.out.println("\nStudent deleted");
                 return;
             }
         }
 
         System.out.println("Student not found");
+    }
+
+    public StudentService(){
+       STUDENTS = FileStorage.loadStudents();
     }
 }

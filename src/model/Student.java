@@ -12,23 +12,22 @@ public class Student {
         this.age=age;
     }
 
-    public int getId(){
+        // Getters
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public int getId() {
         return id;
     }
 
-    public String getName(){
-        return name;
-    }
-
-    public int getAge(){
-        return age;
-    }
-
     public void displayStudent(){
-        System.out.println("ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+
+        System.out.println("Id: "+id);
+        System.out.println("Name: "+name);
+        System.out.println("Age: "+age);
         System.out.println("-------------------------------\n");
     }
-
 }

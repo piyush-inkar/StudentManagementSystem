@@ -35,11 +35,13 @@ public class Main {
 
                 case 3:
                     int searchID=InputUtil.getint("Enter ID to search: ");
+                    System.out.println("-------------------------------");
                     service.searchStudent(searchID);
                     break;
 
                 case 4:
                     int deletestudent=InputUtil.getint("Enter ID to delete: ");
+                    System.out.println("-------------------------------");
                     service.deleteStudent(deletestudent);
                     break;
 
